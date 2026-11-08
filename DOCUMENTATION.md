@@ -691,20 +691,27 @@ EC2 > Load balancers > PROJECT-SPIRIT-EXTERNAL-LB >HTTP:80 listener >Edit listen
 
 <img width="2525" height="926" alt="AdobeExpressPhotos_e268291f0fd54712bfed60c002293354_CopyEdited" src="https://github.com/user-attachments/assets/e32395de-ff4c-4a89-822b-1ff6fde59657" />
 
+### . Create the www DNS Record
+
+Route 53 > Hosted zones > project-spirit.site > Create record
+
+<img width="2535" height="931" alt="AdobeExpressPhotos_0b9dce179be148a0a5c69cf8dba6f2a3_CopyEdited" src="https://github.com/user-attachments/assets/51f4c761-0e81-4f7f-8feb-7a1e80dbe826" />
+
+Test Project Spirit on the Domain
+
+<img width="1710" height="500" alt="AdobeExpressPhotos_00da63c034124dd1b50f987eabd8aa81_CopyEdited" src="https://github.com/user-attachments/assets/b7f12d1a-7d48-45f4-8bd6-50488b531eb7" />
 
 
+THE website can now be reached with : https://project-spirit.site/
+                                    www.https://project-spirit.site/
 
 
+<img width="2544" height="1267" alt="AdobeExpressPhotos_f1fddb29e29b4654a38dd7fdbe2181d7_CopyEdited" src="https://github.com/user-attachments/assets/b48147a5-e6c6-4fd0-94e5-cecf4b7d8cb0" />
 
 
+<img width="2545" height="1251" alt="AdobeExpressPhotos_20738ecced904b5681d4b31f8623456b_CopyEdited" src="https://github.com/user-attachments/assets/0b041bd1-e36a-4342-a1ea-527617c3299e" />
 
-
-
-
-
-
-
-
+### .  successfully connected the domain purchased through Hostinger to Route 53, issued an SSL/TLS certificate through ACM, configured HTTPS on the external Application Load Balancer, and set up HTTP-to-HTTPS redirection.
 
 
 
