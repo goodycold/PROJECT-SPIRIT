@@ -412,6 +412,24 @@ systemctl status project-spirit
 <img width="2545" height="956" alt="AdobeExpressPhotos_21f9f646425846f28cbae8c4c8c0b986_CopyEdited" src="https://github.com/user-attachments/assets/20774aaa-8f51-4a74-abf0-52621427e5d1" />
 
 
+### CREATING INTERNAL LOAD BALANCER
+
+Target GROUPS
+
+Target groups are sets of registered servers or instances that receive traffic from a load balancer based on defined rules.
+
+Navigate to EC2 > Target Groups> Create Target Groups> instances > Fill necessary input> next > choose instance > include as pending below> create target group
 
 
+<img width="2532" height="932" alt="AdobeExpressPhotos_c6243c3f619c46fc875c460c047e6666_CopyEdited" src="https://github.com/user-attachments/assets/0636047e-dc54-4379-a8ac-e690ef03baf5" />
+
+<img width="2544" height="941" alt="AdobeExpressPhotos_76b5744569b24ac398c9ae3936e2ca84_CopyEdited" src="https://github.com/user-attachments/assets/9f564c2b-24c7-4bb1-8cc4-756b638bffb3" />
+
+<img width="2542" height="943" alt="AdobeExpressPhotos_e50bf87c79e0496da431d2d7ba80f9bf_CopyEdited" src="https://github.com/user-attachments/assets/7d1a2280-c05c-44de-baf8-51a054ce7d69" />
+
+<img width="2545" height="932" alt="AdobeExpressPhotos_5242523033f144bb993d632822a9c6bd_CopyEdited" src="https://github.com/user-attachments/assets/486c68cb-266b-4b63-90ad-60257350f461" />
+
+<img width="2538" height="941" alt="AdobeExpressPhotos_b2449ab49e474641a679bfcb75011e6e_CopyEdited" src="https://github.com/user-attachments/assets/6a9f6f25-3955-4696-882b-0602e067167a" />
+
+<img width="2545" height="939" alt="AdobeExpressPhotos_84b91e540af74a2ba335f56188eceab8_CopyEdited" src="https://github.com/user-attachments/assets/1b2f0a7f-1980-4ca3-a706-013f0a8d8f2a" />
 
