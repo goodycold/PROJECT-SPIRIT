@@ -469,6 +469,27 @@ The below screenshot shows that the internal ALB can reach the backend EC2.
 
 <img width="2523" height="937" alt="AdobeExpressPhotos_07ece2f06ece444dae58bab812fcc421_CopyEdited" src="https://github.com/user-attachments/assets/f751edb1-a750-45fe-b692-59ce3d7de4eb" />
 
+### . CREATING WEB TIER
+
+Navigate to EC2 > instances > Launch Instance > Fill the necessary space
+
+<img width="2543" height="930" alt="AdobeExpressPhotos_8cbd32f8e1b447788ca53811a95ede1b_CopyEdited" src="https://github.com/user-attachments/assets/417f9b06-31eb-4535-a19b-1de2144613df" />
+
+<img width="2543" height="935" alt="AdobeExpressPhotos_deaedef023084ffe82a29c1fd045837c_CopyEdited" src="https://github.com/user-attachments/assets/0b1cf7ff-ea8b-4db0-9ff7-7efdd1fefe61" />
+
+<img width="2543" height="919" alt="AdobeExpressPhotos_9329d843c87a4bf5a44b697e197544aa_CopyEdited" src="https://github.com/user-attachments/assets/33c2d94f-8151-4c4c-88c9-efa873251e9a" />
+
+<img width="2545" height="932" alt="AdobeExpressPhotos_e69c3f173e2242f19f1b26bcbe2c1589_CopyEdited" src="https://github.com/user-attachments/assets/742944c3-5d0c-45ca-abb7-6b8e46c6cb1b" />
+
+<img width="2542" height="922" alt="AdobeExpressPhotos_7c4bddb63ada48d59a9a6f8bfd2452d4_CopyEdited" src="https://github.com/user-attachments/assets/66233fea-76c2-4f1d-9785-535c229003ed" />
+
+<img width="2544" height="937" alt="AdobeExpressPhotos_a9f4ef46a9284f6e873aea639e970ff4_CopyEdited" src="https://github.com/user-attachments/assets/20532538-9ffd-4273-9f1f-0dcb528bd8ce" />
+
+
+
+
+
+
 
 
 
