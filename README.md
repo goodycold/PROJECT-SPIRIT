@@ -1,133 +1,149 @@
-# PROJECT SPIRIT
-## Secure AWS Three-Tier Architecture with HTTPS
+# Project Spirit
 
-### Project Overview
+### AWS Three-Tier Web Application
 
-Project Spirit is a hands-on cloud engineering project focused on building and deploying a secure three-tier web application on Amazon Web Services (AWS).
+[![Live Application](https://img.shields.io/badge/Live%20Application-project--spirit.site-blue)](https://project-spirit.site)
 
-The application allows users to submit information through a web interface, store records in a MySQL database and retrieve previously saved records.
+## Overview
 
-The project demonstrates cloud infrastructure design, network segmentation, compute deployment, load balancing, database connectivity and secure HTTPS communication.
+Project Spirit is a simple three-tier web application deployed on Amazon Web Services (AWS).
 
-### Application Architecture
+The application allows users to submit record descriptions, store them in a MySQL database, and retrieve previously saved records through a web interface, with the records displayed in  SAVED Records Section 
 
-**Application Stack**
+The project demonstrates AWS infrastructure deployment, network segmentation, application hosting, load balancing, database integration, and secure HTTPS communication.
 
-- **Frontend:** HTML, CSS and Vanilla JavaScript
-- **Web Server:** Apache HTTP Server
-- **Backend:** Python and Flask
-- **Database:** Amazon RDS for MySQL
+## Live Application
 
-**Planned AWS Infrastructure**
+**Website:** https://project-spirit.site
 
-- **Networking:** Amazon VPC, public and private subnets across multiple Availability Zones
-- **Frontend Compute:** Amazon EC2
-- **Backend Compute:** Amazon EC2
-- **Public Load Balancer:** Internet-facing Application Load Balancer
-- **Internal Load Balancer:** Internal Application Load Balancer
-- **Database:** Amazon RDS for MySQL
-- **SSL/TLS Certificate:** AWS Certificate Manager (ACM)
-- **DNS:** Amazon Route 53
+## Architecture
 
-### Application Request Flow
-
-The planned request flow is:
+The infrastructure follows a three-tier architecture:
 
 ```text
-Internet / User Browser
-          |
-          | HTTPS
-          v
-   Public Application
-      Load Balancer
-          |
-          v
-    Frontend EC2
-   Apache Web Server
-          |
-          | API Requests
-          v
-   Internal Application
-      Load Balancer
-          |
-          v
-     Backend EC2
-      Python Flask
-          |
-          v
-    Amazon RDS
-       MySQL
+                    INTERNET
+                       |
+                       v
+             Route 53 (DNS)
+                       |
+                       v
+          External Application Load Balancer
+                  HTTPS : 443
+                       |
+                       v
+               Web Tier (EC2)
+                  Apache
+                       |
+                       v
+          Internal Application Load Balancer
+                    HTTP : 80
+                       |
+                       v
+              Backend Tier (EC2)
+                 Flask / Gunicorn
+                       |
+                       v
+                Amazon RDS
+                   MySQL
 ```
 
-Apache will serve the frontend files and forward API requests to the internal load balancer. The backend will communicate with the RDS database.
+### Application Workflow
 
-### Core Application Features
+1. A user submits a record through the web interface.
+2. The frontend sends an HTTP request to the Apache web server.
+3. Apache forwards the API request to the internal Application Load Balancer.
+4. The internal ALB routes the request to the Flask backend running on EC2.
+5. Flask processes the request and communicates with Amazon RDS MySQL.
+6. The database stores new records or retrieves existing records.
+7. The backend returns the response to the frontend, where saved records are displayed.
 
-- Submit and save text records.
-- Retrieve previously saved records.
-- Store application data in a MySQL database.
-- Communicate between the frontend and backend through REST API endpoints.
+## AWS Services Used
 
-### Project Objectives
+| AWS Service | Purpose |
+|---|---|
+| Amazon VPC | Network isolation and segmentation |
+| Amazon EC2 | Hosts the frontend and backend |
+| Application Load Balancer | Distributes web and API traffic |
+| Amazon RDS | Managed MySQL database |
+| Amazon Route 53 | Domain name management and DNS routing |
+| AWS Certificate Manager | SSL/TLS certificate management |
+| Amazon S3 | Stores application source files |
+| NAT Gateway | Provides outbound internet access to private application resources |
+| IAM | Manages permissions for AWS resources |
+| AWS Systems Manager | Remote EC2 instance management |
 
-- Build a functional three-tier web application.
-- Design and deploy an AWS VPC across multiple Availability Zones.
-- Configure public and private subnets.
-- Deploy frontend and backend EC2 instances.
-- Implement public and internal Application Load Balancers.
-- Configure secure connectivity between application tiers.
-- Deploy and connect an Amazon RDS MySQL database.
-- Enable HTTPS using AWS Certificate Manager.
-- Configure DNS using Amazon Route 53.
-- Apply AWS security and access management controls.
+## Technology Stack
 
-### Implementation Phases
+- **Frontend:** HTML, CSS, JavaScript
+- **Web Server:** Apache
+- **Backend:** Python, Flask, Gunicorn
+- **Database:** MySQL 8.4
+- **Operating System:** Amazon Linux 2023
 
-1. Application Development
-2. AWS VPC and Networking
-3. Security Configuration
-4. Compute Deployment
-5. Database Deployment
-6. Load Balancer Configuration
-7. Domain and HTTPS Configuration
-8. Integration and Testing
-9. Documentation and Final Review
+## Infrastructure Design
 
-### Repository Structure
+The infrastructure is deployed in a custom VPC in the AWS Stockholm Region (`eu-north-1`).
+
+The VPC uses two Availability Zones and contains six subnets:
+
+- Two public subnets for the web tier and internet-facing load balancer.
+- Two private application subnets for backend infrastructure and the internal load balancer.
+- Two private database subnets for Amazon RDS.
+
+An Internet Gateway provides connectivity to public resources, while a NAT Gateway enables outbound connectivity from private application resources.
+
+## Security Implementation
+
+The project incorporates several AWS security controls:
+
+- Public, application, and database subnet separation.
+- Security groups restricting communication between application tiers.
+- Private deployment of the backend EC2 instance and RDS database.
+- IAM instance role for controlled AWS service access.
+- AWS Systems Manager for remote instance management.
+- HTTPS enabled through AWS Certificate Manager.
+- HTTP requests redirected to HTTPS using a permanent 301 redirect.
+- Internal ALB used for private backend communication.
+- Database credentials managed through environment variables.
+
+## Project Features
+
+- Submit new record descriptions.
+- Store records in Amazon RDS MySQL.
+- Retrieve and display saved records.
+- Secure public access through HTTPS.
+- Internal routing between application tiers.
+
+## Project Structure
 
 ```text
-project-spirit/
-├── README.md
-├── DOCUMENTATION.md
-├── .gitignore
-├── frontend/
+PROJECT-SPIRIT/
+│
 ├── backend/
-├── database/
-├── infrastructure/
-├── screenshots/
-└── diagrams/
+│   ├── app.py
+│   ├── database.py
+│   ├── requirements.txt
+│   └── README.md
+│
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── app.js
+│   └── README.md
+│
+└── README.md
 ```
 
-### Current Project Status
+## Project Outcome
 
-**Local Application Development: Completed**
+Successfully deployed a functional three-tier web application on AWS, integrating EC2, Application Load Balancers, Amazon RDS, VPC networking, Route 53, and AWS Certificate Manager.
 
-- Frontend interface created.
-- Flask backend implemented.
-- MySQL database and records table configured.
-- Python-to-MySQL connectivity verified.
-- POST and GET API endpoints tested.
-- Frontend successfully integrated with the backend.
-- Local record submission and retrieval verified.
+The project demonstrates practical experience in cloud infrastructure deployment, application integration, network segmentation, IAM-based access, and HTTPS configuration.
 
-**AWS Infrastructure: Pending**
+## Author
 
-AWS networking, EC2 deployment, load balancing, RDS deployment, DNS and HTTPS configuration will be implemented in subsequent phases.
+**Goodluck O. Peters**
 
-### Technologies
-
-HTML | CSS | JavaScript | Python | Flask | MySQL | Apache | AWS
-
-### Project Purpose
-
-This project is designed to demonstrate practical cloud engineering skills through the development, deployment and security of a three-tier application on AWS.
+Cloud Security Engineering | AWS Infrastructure | Application Security
