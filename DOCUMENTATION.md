@@ -582,6 +582,31 @@ CREATING A TARGET GROUP FOR THE APPLICATION LOAD BALANCER.
 
 <img width="1272" height="464" alt="Screenshot 2026-11-08 130225" src="https://github.com/user-attachments/assets/608e37cf-1ce1-4935-8cf0-3c8f1af9e093" />
 
+INTERNE FACING APPLCATION LOAD BALANCER 
+
+<img width="1273" height="469" alt="Screenshot 2026-11-08 131014" src="https://github.com/user-attachments/assets/ea9fc38c-9973-4309-88bb-1ae466ae3b4f" />
+
+<img width="1273" height="429" alt="Screenshot 2026-11-08 131051" src="https://github.com/user-attachments/assets/4219e52d-1125-4034-bef1-a4ea68ed8449" />
+
+
+<img width="1273" height="436" alt="Screenshot 2026-11-08 131114" src="https://github.com/user-attachments/assets/420cab79-bd07-4af9-a417-3c5d69c6f55e" />
+
+<img width="1273" height="422" alt="Screenshot 2026-11-08 131201" src="https://github.com/user-attachments/assets/dea798ed-3376-42fe-9202-d0cc92d05209" />
+
+<img width="1272" height="468" alt="Screenshot 2026-11-08 131233" src="https://github.com/user-attachments/assets/81888e72-4ba8-4c8a-b12e-589239aeda8b" />
+
+<img width="1273" height="467" alt="Screenshot 2026-11-08 131342" src="https://github.com/user-attachments/assets/323bdd72-f4b8-4611-8e97-2f4b83dac680" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
