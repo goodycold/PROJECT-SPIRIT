@@ -567,6 +567,24 @@ Updated the web sevrer's security group, this allows the Web server  to communic
 
 <img width="2545" height="842" alt="AdobeExpressPhotos_e0aa9c80df53414db7494fd0fb448250_CopyEdited" src="https://github.com/user-attachments/assets/539acdd4-e8a3-4982-a969-bb3e3de72d49" />
 
+Testing on broswer
+
+Updated the web server's security group with my PC'S public Ip address. 
+
+<img width="2545" height="1265" alt="AdobeExpressPhotos_175c1f4d6228451dbc5f7bb3bd309e12_CopyEdited" src="https://github.com/user-attachments/assets/44e24662-9380-4852-85ef-80dbd5cd34ab" />
+
+
+CREATING A TARGET GROUP FOR THE APPLICATION LOAD BALANCER. 
+
+<img width="1273" height="468" alt="Screenshot 2026-11-08 130115" src="https://github.com/user-attachments/assets/9b7c1840-7d9c-408a-8bad-56433deb2679" />
+
+<img width="1273" height="469" alt="Screenshot 2026-11-08 130154" src="https://github.com/user-attachments/assets/79714aff-1b40-4fc7-ad96-5e4c84e14036" />
+
+<img width="1272" height="464" alt="Screenshot 2026-11-08 130225" src="https://github.com/user-attachments/assets/608e37cf-1ce1-4935-8cf0-3c8f1af9e093" />
+
+
+
+
 
 
 
