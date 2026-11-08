@@ -621,7 +621,14 @@ Sign in to the AWS Console >Search for Route 53 >Open Hosted zones > Click Creat
 
 <img width="2545" height="934" alt="AdobeExpressPhotos_68401bd790394fd59afeee3ee2bae2fb_CopyEdited" src="https://github.com/user-attachments/assets/7560bdb4-84e6-4b51-88bb-85d809bdbbc5" />
 
-<img width="2542" height="840" alt="AdobeExpressPhotos_16f4870ad0f24d67866263088ecf6aca_CopyEdited" src="https://github.com/user-attachments/assets/bfdff23e-4c84-4ea9-9a3e-30fe08265a33" />
+<img width="2539" height="603" alt="AdobeExpressPhotos_12bcd8a727094dd0b803ce4b0542bc27_CopyEdited" src="https://github.com/user-attachments/assets/052b9362-4221-4b7e-8efd-34e90c9cf1c1" />
+
+
+Verify the nameservers
+
+nslookup -type=NS project-spirit.site
+
+<img width="1735" height="899" alt="AdobeExpressPhotos_c532ceb3e738497f810af56b2a096dc7_CopyEdited" src="https://github.com/user-attachments/assets/df055da9-44ca-4dfc-8ac6-7078f3601e5a" />
 
 
 
