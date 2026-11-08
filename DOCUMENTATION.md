@@ -557,17 +557,15 @@ status check : sudo systemctl status httpd
 <img width="1908" height="947" alt="AdobeExpressPhotos_681ee07b17e2430da9e97e775e091b88_CopyEdited" src="https://github.com/user-attachments/assets/d8e76ef0-a6d8-43c1-975b-9463ce0bf8f4" />
 
 
+Testing the complete Conection : curl -v --connect-timeout 5 --max-time 10 http://internal-PROJECT-APPLICATION-LB-1167768252.eu-north-1.elb.amazonaws.com/health
 
 
+The connection timed out. This is as a result of the webservers security group sending out only https outbound connection. the Web Tier can resolve the Internal ALB's private IP addresses, but it cannot establish a TCP connection on port 80
+
+Updated the web sevrer's security group, this allows the Web server  to communicate with the Internal ALB on port 80 without opening that traffic to the internet.
 
 
-
-
-
-
-
-
-
+<img width="2545" height="842" alt="AdobeExpressPhotos_e0aa9c80df53414db7494fd0fb448250_CopyEdited" src="https://github.com/user-attachments/assets/539acdd4-e8a3-4982-a969-bb3e3de72d49" />
 
 
 
