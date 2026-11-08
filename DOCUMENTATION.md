@@ -425,11 +425,20 @@ Navigate to EC2 > Target Groups> Create Target Groups> instances > Fill necessar
 
 <img width="2544" height="941" alt="AdobeExpressPhotos_76b5744569b24ac398c9ae3936e2ca84_CopyEdited" src="https://github.com/user-attachments/assets/9f564c2b-24c7-4bb1-8cc4-756b638bffb3" />
 
-<img width="2542" height="943" alt="AdobeExpressPhotos_e50bf87c79e0496da431d2d7ba80f9bf_CopyEdited" src="https://github.com/user-attachments/assets/7d1a2280-c05c-44de-baf8-51a054ce7d69" />
+<img width="2523" height="936" alt="AdobeExpressPhotos_fc036294ec6c41c2baba7c2955d157cb_CopyEdited" src="https://github.com/user-attachments/assets/ddb09a46-5d2b-44d3-a45c-c8dfe09fe735" />
 
-<img width="2545" height="932" alt="AdobeExpressPhotos_5242523033f144bb993d632822a9c6bd_CopyEdited" src="https://github.com/user-attachments/assets/486c68cb-266b-4b63-90ad-60257350f461" />
+<img width="2526" height="936" alt="AdobeExpressPhotos_b7944577a40843a98c64040fb3ca18b5_CopyEdited" src="https://github.com/user-attachments/assets/714a8318-1019-4c77-8fb6-b6bb3e6b7790" />
 
-<img width="2538" height="941" alt="AdobeExpressPhotos_b2449ab49e474641a679bfcb75011e6e_CopyEdited" src="https://github.com/user-attachments/assets/6a9f6f25-3955-4696-882b-0602e067167a" />
+<img width="2543" height="1027" alt="AdobeExpressPhotos_b3e07e0e9a0e4c9f8af62d8cc50d69a0_CopyEdited" src="https://github.com/user-attachments/assets/b04f5396-c6ef-4c69-b1a7-89d3ddd7c927" />
 
-<img width="2545" height="939" alt="AdobeExpressPhotos_84b91e540af74a2ba335f56188eceab8_CopyEdited" src="https://github.com/user-attachments/assets/1b2f0a7f-1980-4ca3-a706-013f0a8d8f2a" />
+
+### LOAD BALANCER
+
+A load balancer is a network device or service that distributes incoming traffic across multiple servers to ensure reliability, scalability, and optimal performance.
+
+Navigate to EC2> Load Balancers> Create Load Balancer> Create Application Load Balancer > internal (for this project) > Fill in necessary fields
+
+<img width="2536" height="942" alt="AdobeExpressPhotos_84f5341e573e4f74abb61430957d24c6_CopyEdited" src="https://github.com/user-attachments/assets/83c34854-b815-47db-9fe6-8da03309dda6" />
+
+<img width="2529" height="930" alt="AdobeExpressPhotos_6a57be97307e4e118b2e2f8da57893d2_CopyEdited" src="https://github.com/user-attachments/assets/45d0332a-c0db-47f0-b967-827d41344dfd" />
 
