@@ -12,7 +12,42 @@ The application allows users to submit record descriptions, store them in a MySQ
 
 The project demonstrates AWS infrastructure deployment, network segmentation, application hosting, load balancing, database integration, and secure HTTPS communication.
 
+## Project Architecture
+
+
+flowchart TD
+    U["Internet / Users"] --> R53["Amazon Route 53"]
+    R53 --> EALB["External ALB<br/>HTTPS : 443<br/>HTTP redirects to HTTPS"]
+    
+    subgraph VPC["Project Spirit VPC – 10.0.0.0/16"]
+        subgraph PUBLIC["Public Subnets – 2 Availability Zones"]
+            EALB
+            WEB["EC2 Instance 1<br/>Web Tier – Apache"]
+            NAT["NAT Gateway"]
+        end
+
+        subgraph APP["Private Application Subnets"]
+            IALB["Internal ALB<br/>HTTP : 80"]
+            BACK["EC2 Instance 2<br/>Backend – Flask / Gunicorn"]
+        end
+
+        subgraph DB["Private Database Subnets"]
+            RDS["Amazon RDS<br/>MySQL – Single DB Instance"]
+        end
+
+        WEB --> IALB
+        IALB --> BACK
+        BACK --> RDS
+        NAT -. "Outbound internet access" .-> APP
+    end
+
+    IGW["Internet Gateway"] --- EALB
+    ACM["AWS Certificate Manager"] -. "TLS certificate" .-> EALB
+
+
+
 ## Live Application
+
 
 **Website:** https://project-spirit.site
 
