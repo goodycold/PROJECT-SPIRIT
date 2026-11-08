@@ -471,17 +471,4 @@ The below screenshot shows that the internal ALB can reach the backend EC2.
 
 
 
-### .  CREATING WEB TIER
-
-Navigate to EC2 > instances > Launch Instance > Fill the necessary space
-
-<img width="2543" height="936" alt="AdobeExpressPhotos_bb625502c5f04dbaa0a1016e234b11b3_CopyEdited" src="https://github.com/user-attachments/assets/481fc4cd-bd84-417e-b5f6-5719c53a1c58" />
-
-<img width="2543" height="937" alt="AdobeExpressPhotos_fb6d40c1fead44fcaecfd63abb7a6f3c_CopyEdited" src="https://github.com/user-attachments/assets/12b4fd76-69a5-4958-a2ab-11bb73df4fef" />
-
-<img width="2537" height="931" alt="AdobeExpressPhotos_4156213f61e940d183b16964365d36ec_CopyEdited" src="https://github.com/user-attachments/assets/55090e21-7a69-42b2-950d-5a92e68f2e2d" />
-
-<img width="2538" height="932" alt="AdobeExpressPhotos_33cc007876274f39bafff3787164dc26_CopyEdited" src="https://github.com/user-attachments/assets/50503d68-7daa-43de-896f-393d7149bbc9" />
-
-
 
