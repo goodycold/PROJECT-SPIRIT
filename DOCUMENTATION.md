@@ -623,12 +623,37 @@ Sign in to the AWS Console >Search for Route 53 >Open Hosted zones > Click Creat
 
 <img width="2539" height="603" alt="AdobeExpressPhotos_12bcd8a727094dd0b803ce4b0542bc27_CopyEdited" src="https://github.com/user-attachments/assets/052b9362-4221-4b7e-8efd-34e90c9cf1c1" />
 
+<img width="2535" height="812" alt="AdobeExpressPhotos_c68bfe8ab5fd4d1798f40ba1304e24c1_CopyEdited" src="https://github.com/user-attachments/assets/12586327-9f4d-4b48-b0ad-545a5564984b" />
+
 
 Verify the nameservers
 
 nslookup -type=NS project-spirit.site
 
 <img width="1735" height="899" alt="AdobeExpressPhotos_c532ceb3e738497f810af56b2a096dc7_CopyEdited" src="https://github.com/user-attachments/assets/df055da9-44ca-4dfc-8ac6-7078f3601e5a" />
+
+
+
+### .  Requesting a Public SSL/TLS Certificate Using AWS Certificate Manager (ACM)
+
+Certificate Manager > Request certificate >  public certificate 
+
+<img width="2545" height="931" alt="AdobeExpressPhotos_3d05a92d0e7b49998cd3fa3c7fe2b502_CopyEdited" src="https://github.com/user-attachments/assets/20b7baa9-6af9-40ff-896b-53e2864b3031" />
+
+<img width="2543" height="928" alt="AdobeExpressPhotos_1b545c24f8ef46398ae529ea75b1ce13_CopyEdited" src="https://github.com/user-attachments/assets/8773175b-212a-401e-937d-8c086b992324" />
+
+<img width="2545" height="935" alt="AdobeExpressPhotos_06e9a4b9d4284ababf3da87fdc9044d0_CopyEdited" src="https://github.com/user-attachments/assets/7b82fdb2-7a70-4430-b3d3-9329a192c9e6" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
