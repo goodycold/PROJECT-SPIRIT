@@ -473,17 +473,23 @@ The below screenshot shows that the internal ALB can reach the backend EC2.
 
 Navigate to EC2 > instances > Launch Instance > Fill the necessary space
 
-<img width="2543" height="930" alt="AdobeExpressPhotos_8cbd32f8e1b447788ca53811a95ede1b_CopyEdited" src="https://github.com/user-attachments/assets/417f9b06-31eb-4535-a19b-1de2144613df" />
+<img width="2533" height="933" alt="AdobeExpressPhotos_86c0b9ec656f4e27a416f47aeb923973_CopyEdited" src="https://github.com/user-attachments/assets/559e4623-c107-467b-97fb-f3123d40b292" />
 
-<img width="2543" height="935" alt="AdobeExpressPhotos_deaedef023084ffe82a29c1fd045837c_CopyEdited" src="https://github.com/user-attachments/assets/0b1cf7ff-ea8b-4db0-9ff7-7efdd1fefe61" />
+<img width="2542" height="931" alt="AdobeExpressPhotos_6cc8588af52349519c6c7b446892f730_CopyEdited" src="https://github.com/user-attachments/assets/8d46c717-f034-44f9-9f73-36ce2e438879" />
 
-<img width="2543" height="919" alt="AdobeExpressPhotos_9329d843c87a4bf5a44b697e197544aa_CopyEdited" src="https://github.com/user-attachments/assets/33c2d94f-8151-4c4c-88c9-efa873251e9a" />
 
-<img width="2545" height="932" alt="AdobeExpressPhotos_e69c3f173e2242f19f1b26bcbe2c1589_CopyEdited" src="https://github.com/user-attachments/assets/742944c3-5d0c-45ca-abb7-6b8e46c6cb1b" />
+<img width="2545" height="931" alt="AdobeExpressPhotos_e45c82b89ba84085b1a8c0950ebfe7eb_CopyEdited" src="https://github.com/user-attachments/assets/278214c0-6984-4ff2-807d-3f3a12ce9193" />
 
-<img width="2542" height="922" alt="AdobeExpressPhotos_7c4bddb63ada48d59a9a6f8bfd2452d4_CopyEdited" src="https://github.com/user-attachments/assets/66233fea-76c2-4f1d-9785-535c229003ed" />
+<img width="2545" height="938" alt="AdobeExpressPhotos_c503dad8ff0841548d41e859ba9c8434_CopyEdited" src="https://github.com/user-attachments/assets/d926c81f-cc3b-4fe5-ad75-33a0ed6576cd" />
 
-<img width="2544" height="937" alt="AdobeExpressPhotos_a9f4ef46a9284f6e873aea639e970ff4_CopyEdited" src="https://github.com/user-attachments/assets/20532538-9ffd-4273-9f1f-0dcb528bd8ce" />
+
+<img width="2542" height="938" alt="AdobeExpressPhotos_a8290c07835e42589baad5239beb05b1_CopyEdited" src="https://github.com/user-attachments/assets/3c31667c-1ebb-4079-bbb4-0e323d23b61e" />
+
+<img width="2545" height="908" alt="AdobeExpressPhotos_567e075f8a724f4bbfdd041c3d0c89ea_CopyEdited" src="https://github.com/user-attachments/assets/156b00af-c268-4509-829a-405cdeb5d87c" />
+
+
+
+
 
 
 
