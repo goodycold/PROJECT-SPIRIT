@@ -582,7 +582,7 @@ CREATING A TARGET GROUP FOR THE APPLICATION LOAD BALANCER.
 
 <img width="1272" height="464" alt="Screenshot 2026-11-08 130225" src="https://github.com/user-attachments/assets/608e37cf-1ce1-4935-8cf0-3c8f1af9e093" />
 
-INTERNE FACING APPLCATION LOAD BALANCER 
+INTERNET FACING APPLCATION LOAD BALANCER 
 
 <img width="1273" height="469" alt="Screenshot 2026-11-08 131014" src="https://github.com/user-attachments/assets/ea9fc38c-9973-4309-88bb-1ae466ae3b4f" />
 
@@ -597,10 +597,13 @@ INTERNE FACING APPLCATION LOAD BALANCER
 
 <img width="1273" height="467" alt="Screenshot 2026-11-08 131342" src="https://github.com/user-attachments/assets/323bdd72-f4b8-4611-8e97-2f4b83dac680" />
 
+The  Web Tier EC2 is now healthy behind the external ALB.
 
+<img width="2545" height="946" alt="AdobeExpressPhotos_630b3dc12ded4824aa66ea72f4e8d02f_CopyEdited" src="https://github.com/user-attachments/assets/b1a74607-4cca-478e-9ea1-6dc66280b422" />
 
+<img width="2538" height="1264" alt="AdobeExpressPhotos_e470fa75d43b4cb4b9100b04407623b0_CopyEdited" src="https://github.com/user-attachments/assets/b0afcbc8-c1b7-4012-9dd5-5a7412a8ebdf" />
 
-
+<img width="2545" height="1267" alt="AdobeExpressPhotos_61973077f7e94ab0a8fd334a94da5577_CopyEdited" src="https://github.com/user-attachments/assets/0c2e7843-43a6-4ddc-bcf0-1113d7692b0b" />
 
 
 
