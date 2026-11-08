@@ -685,8 +685,11 @@ EC2 > Load balancers > PROJECT-SPIRIT-EXTERNAL-LB >HTTP:80 listener >Edit listen
 <img width="2545" height="928" alt="AdobeExpressPhotos_b862192f73d446f78fbaea8ac2fcf34a_CopyEdited" src="https://github.com/user-attachments/assets/410f28e7-ae32-499c-9316-364acd6a469e" />
 
 
+### .  Point the  Domain to the External ALB
 
+<img width="2517" height="929" alt="AdobeExpressPhotos_f85baff6277b4fde924ac1cce1d9bcba_CopyEdited" src="https://github.com/user-attachments/assets/b1eb1985-6174-4a0c-aaee-7b5764ad0508" />
 
+<img width="2525" height="926" alt="AdobeExpressPhotos_e268291f0fd54712bfed60c002293354_CopyEdited" src="https://github.com/user-attachments/assets/e32395de-ff4c-4a89-822b-1ff6fde59657" />
 
 
 
