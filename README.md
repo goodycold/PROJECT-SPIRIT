@@ -15,7 +15,7 @@ The project demonstrates AWS infrastructure deployment, network segmentation, ap
 ## Project Architecture
 
 
-<img width="1420" height="1804" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/1a1753b6-24c3-445b-b49e-f77c398c28c6" />
+<img width="1508" height="3374" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/d7978b74-cea8-48b8-89bd-1f7e05652195" />
 
 
 
