@@ -660,6 +660,31 @@ Click your certificate > Domains > Create records in Route 53 button >  create
 
 ### .  Configure HTTPS on the External Application Load Balancer
 
+EC2 > Load balancers >PROJECT-SPIRIT-EXTERNAL-LB > Add listener
+
+<img width="2541" height="857" alt="AdobeExpressPhotos_c381763e15794f258a00f75c24e0176a_CopyEdited" src="https://github.com/user-attachments/assets/ae6524d1-ff11-4f92-87c2-e20f6667bc35" />
+
+<img width="2533" height="919" alt="AdobeExpressPhotos_9374813ff04d4fc3855b83a88f0c77af_CopyEdited" src="https://github.com/user-attachments/assets/3ccd358f-aa8d-4b80-a5a7-d62d1d08f8bc" />
+
+<img width="2545" height="927" alt="AdobeExpressPhotos_5487774e3b3742338393e0f0feca5904_CopyEdited" src="https://github.com/user-attachments/assets/3f755b4e-8f32-47ab-87f7-567ee8518ffc" />
+
+<img width="2545" height="933" alt="AdobeExpressPhotos_09348c10fb1f4043ae49c2bcfaec87fa_CopyEdited" src="https://github.com/user-attachments/assets/324b2bae-719b-4181-8838-461469eb36a6" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
