@@ -654,8 +654,11 @@ Click your certificate > Domains > Create records in Route 53 button >  create
 
 <img width="1974" height="646" alt="AdobeExpressPhotos_a19daf1e879946a8b2aa3e2e21864bc2_CopyEdited" src="https://github.com/user-attachments/assets/3a7b6660-04d9-4f13-a86c-eb4073b1d440" />
 
+<img width="2525" height="929" alt="AdobeExpressPhotos_6e37c539933e480d99a9cd193f9807b6_CopyEdited" src="https://github.com/user-attachments/assets/63c22819-ad67-481e-9424-c7f1846bcce9" />
 
+<img width="2523" height="926" alt="AdobeExpressPhotos_df6131bf4bfb4eb39c6923649a09fb1a_CopyEdited" src="https://github.com/user-attachments/assets/3e6fee89-e8a1-4d29-9779-97aa609b5f8a" />
 
+### .  Configure HTTPS on the External Application Load Balancer
 
 
 
