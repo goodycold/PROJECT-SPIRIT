@@ -442,3 +442,42 @@ Navigate to EC2> Load Balancers> Create Load Balancer> Create Application Load B
 
 <img width="2529" height="930" alt="AdobeExpressPhotos_6a57be97307e4e118b2e2f8da57893d2_CopyEdited" src="https://github.com/user-attachments/assets/45d0332a-c0db-47f0-b967-827d41344dfd" />
 
+<img width="2528" height="940" alt="AdobeExpressPhotos_dd08cb1e29bc4fda925c41edf0901e7f_CopyEdited" src="https://github.com/user-attachments/assets/c3fe3286-38ae-4f8b-a001-66088bde173d" />
+
+
+
+Before moving to the next step which is to create the web-tier, Open the internal ALB's target group and check the backend EC2 health status
+
+<img width="2538" height="930" alt="AdobeExpressPhotos_3aa3e160d4ce495492d68c4e093c9c4e_CopyEdited" src="https://github.com/user-attachments/assets/da47f0e0-d5ee-4512-8be6-a5ed2b73070a" />
+
+This screenshot showed that the cause is a security group rule blocking communication between the internal ALB and  backend EC2.
+
+### .  TROUBLESHOOTING AND FIXING
+
+Check the backend EC2 security group
+
+<img width="2538" height="923" alt="AdobeExpressPhotos_e544964839a54c139a0e8c7a8a03e2e6_CopyEdited" src="https://github.com/user-attachments/assets/0d2597f6-b682-4900-9800-609acf6d2464" />
+
+The screenshot shows that the backend security group is allowing traffic on the wrong port (4000) instead of port 5000 which Gunicorn is listening on , and requests will come from the  internal Load Balancer's security group .
+
+FIX:  Add  new inbound rule with the right port. 
+
+<img width="2524" height="919" alt="AdobeExpressPhotos_c578e76e560e4ff3a7db85b4e107e79c_CopyEdited" src="https://github.com/user-attachments/assets/e0354350-2a88-45ea-9ca1-10675da3c4bd" />
+
+
+The below screenshot shows that the internal ALB can reach the backend EC2.
+
+<img width="2523" height="937" alt="AdobeExpressPhotos_07ece2f06ece444dae58bab812fcc421_CopyEdited" src="https://github.com/user-attachments/assets/f751edb1-a750-45fe-b692-59ce3d7de4eb" />
+
+
+
+### .  CREATING WEB TIER
+
+Navigate to EC2 > instances > Launch Instance > Fill the necessary space
+
+
+
+
+
+
+
