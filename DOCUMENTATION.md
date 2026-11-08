@@ -488,6 +488,82 @@ Navigate to EC2 > instances > Launch Instance > Fill the necessary space
 <img width="2545" height="908" alt="AdobeExpressPhotos_567e075f8a724f4bbfdd041c3d0c89ea_CopyEdited" src="https://github.com/user-attachments/assets/156b00af-c268-4509-829a-405cdeb5d87c" />
 
 
+After creating the web Tier instance, the next step is to connect through SSM and run as ec2-user. Then run the following commands.
+
+sudo dnf install -y httpd
+
+sudo systemctl enable --now httpd
+
+<img width="2545" height="976" alt="AdobeExpressPhotos_b6c32475585e43f9a17c7de56f17fe31_CopyEdited" src="https://github.com/user-attachments/assets/ba231f9d-441c-4fe8-8451-250d5367a6cc" />
+
+<img width="2545" height="987" alt="AdobeExpressPhotos_0e3039a0e2294a48ae609ac0259e0062_CopyEdited" src="https://github.com/user-attachments/assets/f63138df-fa86-4af6-b4f9-d6a387c32b15" />
+
+
+CLI VERSION :aws --version
+
+ S3 bucket access : aws s3 ls s3://projectspirit-bucket/
+
+<img width="1985" height="176" alt="AdobeExpressPhotos_1c2e4f85347d44ca888842a580d549fd_CopyEdited" src="https://github.com/user-attachments/assets/b4baa1a5-a325-4245-8428-613230fcc186" />
+
+inspect bucket content : aws s3 ls s3://projectspirit-bucket/PROJECT-SPIRIT-main/PROJECT-SPIRIT-main/frontend/ --recursive
+
+create destination folder : mkdir -p /var/www/html/css /var/www/html/js
+
+Copy contents to created apache web  directory :  aws s3 cp s3://projectspirit-bucket/PROJECT-SPIRIT-main/PROJECT-SPIRIT-main/frontend/ /var/www/html/ --recursive
+
+
+Confirm copied contents : ls -R /var/www/html/
+
+<img width="2545" height="506" alt="AdobeExpressPhotos_f1eaf5eb2bba4144ad3bfb0ccb69558f_CopyEdited" src="https://github.com/user-attachments/assets/fb04d634-1de5-4e87-9024-e568e064bb01" />
+
+Testing Apache locally : curl -I http://localhost
+
+<img width="1012" height="307" alt="AdobeExpressPhotos_759eaa4ca4e6478cb56f5312a88dccdc_CopyEdited" src="https://github.com/user-attachments/assets/d1eb59a3-f8c0-4302-8951-210e02155378" />
+
+
+configure Apache as a reverse proxy
+
+The browser will send requests to the Web Tier, and Apache will forward /api/records to the Internal ALB, which routes them to the Flask backend
+
+1 enable Apache's reverse-proxy modules so it can forward API requests to the backend : 
+
+sudo sed -i 's/^#LoadModule proxy_module/LoadModule proxy_module/' /etc/httpd/conf.modules.d/00-proxy.conf
+
+sudo sed -i 's/^#LoadModule proxy_http_module/LoadModule proxy_http_module/' /etc/httpd/conf.modules.d/00-proxy.conf
+
+grep -E 'LoadModule proxy(_http)?_module' /etc/httpd/conf.modules.d/00-proxy.conf
+
+create Apache's reverse-proxy configuration  
+
+sudo nano /etc/httpd/conf.d/project-spirit-proxy.conf
+
+Paste the code into the file 
+
+ProxyPass /api/ http://internal-PROJECT-APPLICATION-LB-1167768252.eu-north-1.elb.amazonaws.com/api/
+ProxyPassReverse /api/ http://internal-PROJECT-APPLICATION-LB-1167768252.eu-north-1.elb.amazonaws.com/api/
+
+This tells Apache to forward /api/ requests to the Internal ALB, preserving the API path.
+
+<img width="2288" height="358" alt="AdobeExpressPhotos_9014d6bfdf634ea89c5666c71a2e8e0c_CopyEdited" src="https://github.com/user-attachments/assets/e6c20df2-abf2-4f1e-9b3b-f75ba4d1d112" />
+
+Validate configuration : sudo apachectl configtest
+responds with syntax ok 
+
+Restart Apache : sudo systemctl restart httpd
+
+status check : sudo systemctl status httpd
+
+
+<img width="1908" height="947" alt="AdobeExpressPhotos_681ee07b17e2430da9e97e775e091b88_CopyEdited" src="https://github.com/user-attachments/assets/d8e76ef0-a6d8-43c1-975b-9463ce0bf8f4" />
+
+
+
+
+
+
+
+
+
 
 
 
