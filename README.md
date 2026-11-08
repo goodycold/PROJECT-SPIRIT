@@ -121,19 +121,26 @@ The project incorporates several AWS security controls:
 PROJECT-SPIRIT/
 │
 ├── backend/
+│   ├── .env.example
 │   ├── app.py
 │   ├── database.py
 │   ├── requirements.txt
 │   └── README.md
 │
+├── database/
+│   ├── schema.sql
+│   └── README.md
+│
 ├── frontend/
 │   ├── index.html
 │   ├── css/
-│   │   └── style.css
 │   ├── js/
-│   │   └── app.js
 │   └── README.md
 │
+├── infrastructure/
+│
+├── .gitignore
+├── DOCUMENTATION.md
 └── README.md
 ```
 
