@@ -12,14 +12,6 @@ The application allows users to submit record descriptions, store them in a MySQ
 
 The project demonstrates AWS infrastructure deployment, network segmentation, application hosting, load balancing, database integration, and secure HTTPS communication.
 
-## Project Architecture
-
-
-<img width="1508" height="3374" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/d7978b74-cea8-48b8-89bd-1f7e05652195" />
-
-
-
-
 ## Live Application
 
 
