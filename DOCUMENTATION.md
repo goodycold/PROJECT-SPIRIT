@@ -650,6 +650,7 @@ Certificate Manager > Request certificate >  public certificate
 
 Click your certificate > Domains > Create records in Route 53 button >  create 
 
+
 <img width="2543" height="924" alt="AdobeExpressPhotos_a5404c6ecae84ba49b1fdd00b2865f0c_CopyEdited" src="https://github.com/user-attachments/assets/166310cf-03e7-4319-a0f4-097db9450a91" />
 
 <img width="1974" height="646" alt="AdobeExpressPhotos_a19daf1e879946a8b2aa3e2e21864bc2_CopyEdited" src="https://github.com/user-attachments/assets/3a7b6660-04d9-4f13-a86c-eb4073b1d440" />
@@ -661,6 +662,7 @@ Click your certificate > Domains > Create records in Route 53 button >  create
 ### .  Configure HTTPS on the External Application Load Balancer
 
 EC2 > Load balancers >PROJECT-SPIRIT-EXTERNAL-LB > Add listener
+The SSL/TLS certificate  was placed on the public-facing load balancer so visitors can securely access Project Spirit without exposing the backend directly.
 
 <img width="2541" height="857" alt="AdobeExpressPhotos_c381763e15794f258a00f75c24e0176a_CopyEdited" src="https://github.com/user-attachments/assets/ae6524d1-ff11-4f92-87c2-e20f6667bc35" />
 
@@ -669,6 +671,21 @@ EC2 > Load balancers >PROJECT-SPIRIT-EXTERNAL-LB > Add listener
 <img width="2545" height="927" alt="AdobeExpressPhotos_5487774e3b3742338393e0f0feca5904_CopyEdited" src="https://github.com/user-attachments/assets/3f755b4e-8f32-47ab-87f7-567ee8518ffc" />
 
 <img width="2545" height="933" alt="AdobeExpressPhotos_09348c10fb1f4043ae49c2bcfaec87fa_CopyEdited" src="https://github.com/user-attachments/assets/324b2bae-719b-4181-8838-461469eb36a6" />
+
+### . Configure HTTP-to-HTTPS redirection
+
+This ensures visitors using HTTP are automatically redirected to HTTPS.
+
+EC2 > Load balancers > PROJECT-SPIRIT-EXTERNAL-LB >HTTP:80 listener >Edit listener
+
+<img width="2545" height="936" alt="AdobeExpressPhotos_f71f850175a54f7d8f80e624276c96b1_CopyEdited" src="https://github.com/user-attachments/assets/3fa5ae5f-814d-4480-b3b2-6ecbcfbc9011" />
+
+<img width="2513" height="918" alt="AdobeExpressPhotos_305afaaff61d4ae7bccf4741c7d01921_CopyEdited" src="https://github.com/user-attachments/assets/a4e709fd-f760-485c-985f-4cbe8133b385" />
+
+<img width="2545" height="928" alt="AdobeExpressPhotos_b862192f73d446f78fbaea8ac2fcf34a_CopyEdited" src="https://github.com/user-attachments/assets/410f28e7-ae32-499c-9316-364acd6a469e" />
+
+
+
 
 
 
