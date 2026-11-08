@@ -606,13 +606,16 @@ The  Web Tier EC2 is now healthy behind the external ALB.
 <img width="2545" height="1267" alt="AdobeExpressPhotos_61973077f7e94ab0a8fd334a94da5577_CopyEdited" src="https://github.com/user-attachments/assets/0c2e7843-43a6-4ddc-bcf0-1113d7692b0b" />
 
 
+Purchased a Domain from Hostinger : project-spirit.site   
+
+### . Create a hosted zone in Route 53
+
+Sign in to the AWS Console >Search for Route 53 >Open Hosted zones > Click Create hosted zone > Enter  details. 
+
+<img width="2545" height="935" alt="AdobeExpressPhotos_5d71049aeabf44babb477eeb6ea8d6a4_CopyEdited" src="https://github.com/user-attachments/assets/3480a1aa-7051-48a9-be34-ae77c718065d" />
 
 
-
-
-
-
-
+<img width="2545" height="938" alt="AdobeExpressPhotos_e7e5cac12025489c9f3f7277f3b532a2_CopyEdited" src="https://github.com/user-attachments/assets/5ec65ec5-e88c-4e09-a8d4-73c25c7a9c37" />
 
 
 
