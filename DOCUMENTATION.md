@@ -646,11 +646,13 @@ Certificate Manager > Request certificate >  public certificate
 
 
 
+### .  Validate the SSL Certificate Through Route 53
 
+Click your certificate > Domains > Create records in Route 53 button >  create 
 
+<img width="2543" height="924" alt="AdobeExpressPhotos_a5404c6ecae84ba49b1fdd00b2865f0c_CopyEdited" src="https://github.com/user-attachments/assets/166310cf-03e7-4319-a0f4-097db9450a91" />
 
-
-
+<img width="1974" height="646" alt="AdobeExpressPhotos_a19daf1e879946a8b2aa3e2e21864bc2_CopyEdited" src="https://github.com/user-attachments/assets/3a7b6660-04d9-4f13-a86c-eb4073b1d440" />
 
 
 
