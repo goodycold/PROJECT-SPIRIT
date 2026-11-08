@@ -617,6 +617,13 @@ Sign in to the AWS Console >Search for Route 53 >Open Hosted zones > Click Creat
 
 <img width="2545" height="938" alt="AdobeExpressPhotos_e7e5cac12025489c9f3f7277f3b532a2_CopyEdited" src="https://github.com/user-attachments/assets/5ec65ec5-e88c-4e09-a8d4-73c25c7a9c37" />
 
+### DNS Configuration – Connecting Hostinger to AWS Route 53
+
+<img width="2545" height="934" alt="AdobeExpressPhotos_68401bd790394fd59afeee3ee2bae2fb_CopyEdited" src="https://github.com/user-attachments/assets/7560bdb4-84e6-4b51-88bb-85d809bdbbc5" />
+
+<img width="2542" height="840" alt="AdobeExpressPhotos_16f4870ad0f24d67866263088ecf6aca_CopyEdited" src="https://github.com/user-attachments/assets/bfdff23e-4c84-4ea9-9a3e-30fe08265a33" />
+
+
 
 
 
